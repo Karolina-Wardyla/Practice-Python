@@ -1,9 +1,9 @@
 import unittest
-from EncodeString import encode_string
+from encode_string import encode_string
 
 
 class TestEncodeString(unittest.TestCase):
-    # Tests for encode_string function from EncodeString.py
+    """Tests for encode_string function from encode_string.py"""
 
     def test_lowercase_letters_string(self):
         string = 'abcdzwy'

@@ -13,8 +13,8 @@ def encode_letter(letter):
 
     index = alphabet.index(letter)
     index = -(index + 1)
-    encodedLetter = alphabet[index]
-    return encodedLetter
+    encoded_letter = alphabet[index]
+    return encoded_letter
 
 
 def encode_string(string):
@@ -25,10 +25,11 @@ def encode_string(string):
         if letter in digits:
             result = result + letter
         else:
-            encodedLetter = encode_letter(letter)
-            result = result + encodedLetter
+            encoded_letter = encode_letter(letter)
+            result = result + encoded_letter
     return result
 
-# final_result = encode_string('aaaaaa')
-# print(final_result)
 
+if __name__ == '__main__':
+    final_result = encode_string('aaaaaa')
+    print(final_result)
